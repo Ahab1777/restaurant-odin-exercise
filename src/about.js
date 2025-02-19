@@ -6,7 +6,7 @@ export default function about() {
     h2.textContent = "About";
 
     const aboutText = document.createElement('p');
-    aboutText.textContent = "This is an exercise website for the Odin Project's Full Stack JavaScript curriculum. The website is a fictional place.";
+    aboutText.textContent = "This is an exercise website for the Odin Project's Full Stack JavaScript curriculum. The website is for a fictional place.";
 
     content.appendChild(h2);
     content.appendChild(aboutText);

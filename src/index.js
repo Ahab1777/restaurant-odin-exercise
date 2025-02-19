@@ -1,6 +1,7 @@
 console.log("IT'S ALIVE!!!!!")
 
-import styles from './styles.css'
+import styles from './homepage.css'
+import global from './global.css'
 import homepage from './homepage'
 import menu from './menu'
 import about from './about'

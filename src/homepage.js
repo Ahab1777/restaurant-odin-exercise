@@ -11,6 +11,7 @@ const hero = document.createElement('div');
 hero.classList.add('hero');
 
 const welcomeText = document.createElement('p');
+welcomeText.classList.add('welcome-text');
 welcomeText.textContent = "Yggdrasil Tuber Tavern is a Nordic themed potato bar located in the heart of the city. We offer a variety of tuber dishes, from traditional baked potatoes to unique tuber-based dishes. Our menu is inspired by the rich culinary traditions of the Nordic countries, and we use only the freshest ingredients to create delicious and satisfying meals. Whether you're looking for a quick lunch or a hearty dinner, Yggdrasil Tuber Tavern has something for everyone.";
 
 content.appendChild(h1);

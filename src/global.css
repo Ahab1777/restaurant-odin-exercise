@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+    background-color:var(--secondary-color);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+:root {
+--primary-color: #A52A2A;
+--secondary-color: #D99E32;
+--tertiary-color: #375E2B;
+--quaternary-color: #8B8680;
+}
+
+.nav-bar {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: none;
+    color: white;
+}
+
+.nav-bar > button {
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.3rem 0.7rem;
+    background-color: var(--primary--color);
+    color: var(--tertiary-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar > button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    height: 120px;
+    width: auto;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.footer {
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
