@@ -1,15 +1,16 @@
 console.log("IT'S ALIVE!!!!!")
 
-import styles from './homepage.css'
-import global from './global.css'
+import homepageStyles from './homepage.css'
+import globalStyles from './global.css'
+import menuStyles from './menu.css'
 import homepage from './homepage'
 import menu from './menu'
 import about from './about'
 
-homepage()
+//homepage()
 
 //for testing
-//menu()
+menu()
 //about
 
 const homeButton = document.querySelector('.btn-home')

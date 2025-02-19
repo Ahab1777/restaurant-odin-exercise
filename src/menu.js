@@ -5,14 +5,30 @@ export default function menu() {
     const h2 = document.createElement('h2');
     h2.textContent = "Menu";
 
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-container');
+    
     // Create list of menu items
     const foodItems = document.createElement('ul');
-    foodItems.innerText = 'Foods';
     foodItems.classList.add('food-items');
 
     const beverageItems = document.createElement('ul');
-    beverageItems.innerText = 'Beverages';
     beverageItems.classList.add('beverage-items');
+
+    // Create wrappers for food and beverage items
+    const foodWrapper = document.createElement('div');
+    foodWrapper.classList.add('items-wrapper');
+    const foodHeader = document.createElement('h3');
+    foodHeader.textContent = "Potato Dishes";
+    foodWrapper.appendChild(foodHeader);
+    foodWrapper.appendChild(foodItems);
+
+    const beverageWrapper = document.createElement('div');
+    beverageWrapper.classList.add('items-wrapper');
+    const beverageHeader = document.createElement('h3');
+    beverageHeader.textContent = "Beverages";
+    beverageWrapper.appendChild(beverageHeader);
+    beverageWrapper.appendChild(beverageItems);
 
     // Beverages
     const beverages = [
@@ -51,7 +67,11 @@ export default function menu() {
         foodItems.appendChild(li);
     });
 
-    content.appendChild(h2);
-    content.appendChild(foodItems)
-    content.appendChild(beverageItems);
+    // Append wrappers to menu container
+    menuContainer.appendChild(h2);
+    menuContainer.appendChild(foodWrapper);
+    menuContainer.appendChild(beverageWrapper);
+
+    // Append menu container to content
+    content.appendChild(menuContainer);
 }
