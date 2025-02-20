@@ -13,15 +13,18 @@
 
 body {
     border: 12px groove #8B8680; /* Ashen gray for a stone effect */
+    min-height: 100%;
     padding: 10px;
 }
 
-html, body {
+body {
     height: 100%;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
+/* I probably need to set the childs of the #content grid differently on menu and about, since they do not have as many rows as the content div on the homepage */
 
 
 
